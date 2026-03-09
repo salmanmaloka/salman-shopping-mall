@@ -4,48 +4,87 @@
 <title>Salman Shopping Mall</title>
 
 <style>
+
 body{
+margin:0;
 font-family:Arial;
-background:#f4f4f4;
+background:#f3f3f3;
+}
+
+/* TOP NAVBAR */
+.navbar{
+background:#131921;
+color:white;
+padding:15px;
+font-size:22px;
 text-align:center;
 }
 
-header{
-background:black;
-color:white;
+/* PRODUCTS GRID */
+.container{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
 padding:20px;
 }
 
 .product{
 background:white;
-margin:20px;
 padding:20px;
 border-radius:10px;
+box-shadow:0 2px 5px rgba(0,0,0,0.2);
+text-align:center;
 }
-</style>
 
+.product img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:5px;
+}
+
+button{
+background:#FFD814;
+border:none;
+padding:10px 20px;
+margin-top:10px;
+cursor:pointer;
+border-radius:5px;
+font-weight:bold;
+}
+
+</style>
 </head>
 
 <body>
 
-<header>
-<h1>Salman Shopping Mall</h1>
-<p>Welcome to Salman Shopping Mall Website</p>
-</header>
+<div class="navbar">
+Salman Shopping Mall
+</div>
+
+<div class="container">
 
 <div class="product">
-<h2>Clothes</h2>
-<p>Best fashion clothes</p>
+<img src="https://via.placeholder.com/300">
+<h3>Clothes</h3>
+<p>$25</p>
+<button>Add to Cart</button>
 </div>
 
 <div class="product">
-<h2>Shoes</h2>
-<p>Latest shoes collection</p>
+<img src="https://via.placeholder.com/300">
+<h3>Shoes</h3>
+<p>$40</p>
+<button>Add to Cart</button>
 </div>
 
 <div class="product">
-<h2>Electronics</h2>
-<p>Mobile phones and gadgets</p>
+<img src="https://via.placeholder.com/300">
+<h3>Electronics</h3>
+<p>$120</p>
+<button>Add to Cart</button>
+</div>
+
 </div>
 
 </body>
